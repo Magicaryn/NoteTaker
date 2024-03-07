@@ -15,10 +15,10 @@ app.use('/', htmlRoutes);
 
 
 app.get('/*', (req, res) =>
-res.sendFile(path.join(__dirname,'Main\public\index.html')))
+res.sendFile(path.join(__dirname,'index.html')))
 
 app.get('/notes', (req, res) =>
-res.sendFile(path.join(__dirname, 'Main\public\notes.html'))
+res.sendFile(path.join(__dirname, 'notes.html'))
 )
 
 // Start the server on the port
